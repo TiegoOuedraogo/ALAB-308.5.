@@ -11,7 +11,7 @@ let arr = [2,3,4,5,8];
 let result =  sumArray(arr)
 console.log(result)
 
-function sumOfNum(num){
+function sumArray1(num){
     let sum=0;
     let i =0;
     while(i<num.length){
@@ -22,10 +22,10 @@ function sumOfNum(num){
 }
 
 let ArrNumbers = [2,3,4,5,8,9];
-let total =  sumOfNum(ArrNumbers)
+let total =  sumArray1(ArrNumbers)
 console.log(total)
 
-function arrSum(numbers){
+function sumArray2(numbers){
     let total =0;
     for(let number of numbers){
         total +=number
@@ -34,5 +34,17 @@ function arrSum(numbers){
 }
 
 let arrayNum = [2,3,4,5,8,10];
-let sum =  arrSum(arrayNum)
+let sum =  sumArray2(arrayNum)
 console.log(sum)
+
+function sumArray3(arr){
+    let sum=0;
+    arr.array.forEach(element => {
+        sum +=element;
+    });
+    return sum;
+}
+
+let arrayNum1 = [2,3,4,5,8,10,15];
+let sum1 =  sumArray2(arrayNum1)
+console.log(sum1)
