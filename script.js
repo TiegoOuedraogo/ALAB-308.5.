@@ -48,3 +48,15 @@ function sumArray3(arr){
 let arrayNum1 = [2,3,4,5,8,10,15];
 let sum1 =  sumArray2(arrayNum1)
 console.log(sum1)
+//Take an array of numbers and return the average.
+function arraySumAverage(numbers){
+    let total =0;
+    numbers.forEach(element=>{
+        total +=element;
+    })
+    return numbers.length ===0 ? 0 : total /numbers.length;
+}
+
+let arrayNum2 = [2,3,4,5,8,10,15];
+let average =  arraySumAverage(arrayNum2)
+console.log(average)
