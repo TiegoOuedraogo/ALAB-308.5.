@@ -21,6 +21,18 @@ function sumOfNum(num){
     return sum;
 }
 
-let ArrNumbers = [2,3,4,5,8,90];
-let total =  sumArray(arr)
+let ArrNumbers = [2,3,4,5,8,9];
+let total =  sumOfNum(ArrNumbers)
 console.log(total)
+
+function arrSum(numbers){
+    let total =0;
+    for(let number of numbers){
+        total +=number
+    }
+    return total
+}
+
+let arrayNum = [2,3,4,5,8,10];
+let sum =  arrSum(arrayNum)
+console.log(sum)
