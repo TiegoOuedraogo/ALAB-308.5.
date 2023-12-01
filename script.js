@@ -60,3 +60,18 @@ function arraySumAverage(numbers){
 let arrayNum2 = [2,3,4,5,8,10,15];
 let average =  arraySumAverage(arrayNum2)
 console.log(average)
+//Take an array of strings and return the longest string.
+function findLongestString(strings) {
+    let longestString = "";
+    strings.forEach(string => {
+        if (string.length > longestString.length) {
+            longestString = string;
+        }
+    });
+
+    return longestString;
+}
+
+let strArray = ['hello', 'wonderful', 'cool', 'hi', 'bye'];
+let longestString = findLongestString(strArray);
+console.log("Longest String:", longestString); 
