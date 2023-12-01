@@ -75,3 +75,22 @@ function findLongestString(strings) {
 let strArray = ['hello', 'wonderful', 'cool', 'hi', 'bye'];
 let longestString = findLongestString(strArray);
 console.log("Longest String:", longestString); 
+
+//Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
+function stringLongerThanNum(strings, arrNumber) {
+    
+    let longerStrings = [];
+   
+    strings.forEach(string => {
+        if(string.length > arrNumber)
+        {
+            longerStrings.push(string)
+        }
+
+    });
+
+    return longerStrings;
+}
+
+let mixArray = stringLongerThanNum(['hello', 'wonderful', 'cool', 'hi', 'bye'],3);
+console.log("Longer Strings than number:",mixArray); 
